@@ -393,6 +393,12 @@ body {
   font-size: 34px;
   font-weight: 700;
   text-transform: uppercase; }
+  @media (max-width: 480px) {
+    .gallery__caption {
+      font-size: 24px; } }
+  @media (max-width: 320px) {
+    .gallery__caption {
+      bottom: 20px; } }
 
 .gallery__image {
   width: 100%; }

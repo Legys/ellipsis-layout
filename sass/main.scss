@@ -298,6 +298,7 @@ body {
       text-align: center;
     }
   }
+
 .gallery {
   margin-bottom: 132px;
 }
@@ -339,6 +340,7 @@ body {
     margin-bottom: 15px;
   }
 }
+
 .gallery__caption {
   position: absolute;
   color: $main-white;
@@ -348,6 +350,13 @@ body {
   font-size: 34px;
   font-weight: 700;
   text-transform: uppercase;
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
+  @media (max-width: 320px) {
+    bottom: 20px;
+  }
+
 }
 .gallery__image {
   width: 100%;
@@ -368,9 +377,9 @@ body {
   @include torned-border($main-grey);
   @include media-margin(480px);
   @include inner-padding(480px);
-  @media (max-width: 480px) {
-    @include  torned-border($main-grey, 20%);
-  }
+    @media (max-width: 480px) {
+      @include  torned-border($main-grey, 20%);
+    }
   @media (max-width: 320px) {
     @include  torned-border($main-grey, 6%);
   }
@@ -383,6 +392,7 @@ body {
     font-weight: 700;
     letter-spacing: 5px;
     text-transform: uppercase;
+
   }
   &__caption {
     margin: 0;
